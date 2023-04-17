@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab2</title>
+    <link rel="icon" href= images/meeting-2.png>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!--a title (e.g. "Pomodoro Timer First Brainstorm")
+subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+subtitle for the date
+attendance list
+-->
+
+    <header>
+        <h1> MOCK MEETING MINUTES</h1>
+        <nav>
+            <ul>
+                <li><a href="#opening">Opening</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="opening">
+        <h2>
+            Opening
+        </h2>
+
+        <!-- 
+
+Absent: Jeannie
+Present: Entire team with Akshay
+Location: Zoom
+Time?
+
+        -->
+        <form>
+            <fieldset>
+                <p><b> Team Number: </b> 17</p>
+                <label for="meeting">Choose a meeting type:</label>
+                <select id="meeting">
+                    <option value="checkin">Check In</option>
+                    <option value="social">Social</option>
+                    <option value="work">Work</option>
+                    <option value="planning">Planning</option>
+                </select> 
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="location">Choose a meeting location:</label>
+                <input list="locations" name="location" id="location">
+                <datalist id="locations">
+                  <option value="Zoom">
+                  <option value="In person">
+                </datalist>
+
+            </fieldset>
+
+        </form>
+
+        <p>
+        
+        </p>
+        <div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="agenda">
+        <h2>
+            Agenda
+        </h2>
+        <div>
+            <h3>
+                From Last Meeting
+            </h3>
+            <ul>
+                <li> None </li>
+            </ul>
+        </div>
+        <div>
+            <h3>
+                For Today Meeting
+            </h3>
+            <ul>
+                <li>get team to introduce each other</li>
+                <li><strong> Figure out team contract</strong></li>
+                <li>come up with plan for future meeting</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <main id="main">
+        <h2>
+            Main
+        </h2>
+
+        <p>
+            <i>Role assigned:</i>
+            <ul>
+                <li> Jenny - Developer</li>
+                <li> Jamie - Design</li>
+                <li> Jennifer - Management </li>
+            </ul>
+        </p>
+         
+        <details>
+            <summary>
+                Meeting Notes:
+            </summary>
+            <p>
+                - Everyone must turnin their work before the deadlines <br>
+                - Project will be about magic8ball <br>
+                - Everyone must contribute at least one idea
+            </p>
+
+        </details>
+            
+
+        <section>
+            <h3> Questions/Concerns</h3>
+            <ol>
+                <li> What is the <em>language</em>  to use for the project? </li>
+                <p> - HTML, CSS, JavaScript</p>
+                <li> What is some resource for HTML, CSS and JavaScript? </li>
+                <p>
+                    <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">Link to learn basic HTML</a>
+                </p>
+            </ol>
+        </section>
+        
+
+    </main>
+
+    <footer id="conclusion">
+        <h2>
+            Conclusion
+        </h2>
+
+        <section>
+            <h3> Unanswered Questions/Concerns</h3>
+            None
+        </section>
+
+        <section>
+            <h3> Decision Made</h3>
+        </section>
+
+        <section>
+            <h3> What to do in next meeting</h3>
+        </section>
+
+        <section>
+            <h3> Feedback</h3>
+            <textarea id="feedback" name="feedback" rows="4" cols="50">Please submit your feedback here</textarea>
+            <br>
+            <button type="button" onclick="alert('Submitted Successfully')">Submit</button>
+           
+        </section>
+        <p>You can find the audio and video of the meeting below</p>
+        <audio controls>
+            <source src="/images/Intro-Lab2.m4a">
+        </audio>
+        <video width="320" height="240" controls>
+            <source src="/images/Lab2-video.mp4">
+        </video>
+
+
+        <p> This is the end of our meeting, thank you for coming </p>
+        <img src="/images/ty-icon.png" width="300" height="300">
+
+    </footer>
+
+
+</body>
+
+</html>
