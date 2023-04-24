@@ -3,6 +3,7 @@
 
 <head>
     <title>Lab2</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href= images/meeting-2.png>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
 
     <header>
         <h1> MOCK MEETING MINUTES</h1>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#opening">Opening</a></li>
                 <li><a href="#agenda">Agenda</a></li>
@@ -25,17 +26,11 @@
 
     <hr>
 
-    <section id="opening">
-        <h2>
+    <section class="opening-container">
+        <h2 id="opening-title">
             Opening
         </h2>
-
-        <!-- 
-
-
-
-        -->
-        <form>
+        <form id="opening-form">
             <fieldset>
                 <p><b> Team Number: </b> 17</p>
                 <label for="meeting">Choose a meeting type:</label>
@@ -70,12 +65,11 @@
     </section>
 
 
-
-    <section id="agenda">
-        <h2>
-            Agenda
-        </h2>
-        <div>
+    <h2>
+        Agenda
+    </h2>
+    <section class="agenda-container">
+        <div class="last-meeting">
             <h3>
                 From Last Meeting
             </h3>
@@ -83,7 +77,7 @@
                 <li> None </li>
             </ul>
         </div>
-        <div>
+        <div class="today-meeting">
             <h3>
                 For Today Meeting
             </h3>
@@ -103,8 +97,8 @@
         </h2>
 
         <i>Role assigned:</i>
-        <ol>
-            <li> Jenny - Developer</li>
+        <ol class="roles">
+            <li id="jenny"> Jenny - Developer</li>
             <li> Jamie - Design</li>
             <li> Jennifer - Management </li>
         </ol>
@@ -124,24 +118,25 @@
 
         <section>
             <h3> Questions/Concerns</h3>
-            Q: What is the <em>language</em>  to use for the project? <br>
-            - HTML, CSS, JavaScript <br>
-            Q: What is some resource for HTML, CSS and JavaScript? <br>
-            - <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">Link to learn basic HTML</a>
+            <h4>Q: What is the <em>language</em>  to use for the project?</h4>
+            <p>- HTML, CSS, JavaScript </p>
+            <h4>Q: What is some resource for HTML, CSS and JavaScript?</h4>
+            <p>- <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">Link to learn basic HTML</a></p>
             
         </section>
         
 
     </main>
 
-    <footer id="conclusion">
+    <footer class="conclusion">
         <h2>
             Conclusion
         </h2>
 
         <section>
             <h3> Unanswered Questions/Concerns</h3>
-            None
+            <p> Question: Is there any template for the documentation</p>
+            <p> - Should ask supervisor for more information</p>
         </section>
 
         <section>
@@ -150,26 +145,36 @@
 
         <section>
             <h3> What to do in next meeting</h3>
+            <ul class="todo">
+                <li>Plan Metting</li>
+                <li>Work on Project
+                    <ol>
+                        <li>Work on Front end</li>
+                        <li>Work on Back end</li>
+                    </ol>
+                </li>
+            </ul>
+                
         </section>
 
         <section>
             <h3> Feedback</h3>
-            <textarea id="feedback" name="feedback" rows="4" cols="50">Please submit your feedback here</textarea>
+            <textarea class="feedback" name="feedback" rows="4" cols="50">Please submit your feedback here</textarea>
             <br>
             <button type="button" onclick="alert('Submitted Successfully')">Submit</button>
            
         </section>
         <p>You can find the audio and video of the meeting below</p>
         <audio controls>
-            <source src="/images/Intro-Lab2.m4a" >
+            <source src="Intro-Lab2.m4a" >
         </audio>
         <video width="320" height="240" controls>
-            <source src="/images/Lab2-video.mp4" type="video/mp4">
+            <source src="Lab2-video.mp4" type="video/mp4">
         </video>
 
 
         <p> This is the end of our meeting, thank you for coming </p>
-        <img src="/images/ty-icon.png" alt="thank-you" width="300" height="300">
+        <img src="ty-icon.png" alt="thank-you" width="300" height="300">
 
     </footer>
 
