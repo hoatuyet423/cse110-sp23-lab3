@@ -1,19 +1,23 @@
 /*
-  Add style rules for the body of a your webpage.
-  Note: These rules will be applied to all elements.
+media query to fix all size
 */
-
 @media only screen and (max-width: 300px){
     body{
         background-color: lightblue;
     }
 }
 
+/*
+custom font
+*/
 @font-face {
     font-family: myfont;
     src: url(VinaSans-Regular.ttf)
   }
 
+/*
+custom body of the page
+*/
 body {
 
     /* Add a background color or image */
@@ -48,6 +52,10 @@ body::before {
     background-image: url('meeting-minutes-bg.webp');
     opacity: 0.1;
 }
+*/
+
+/*
+title: meeting minutes
 */
 h1{
     color: hsl(334, 44%, 54%);
@@ -100,6 +108,9 @@ h1{
       font-weight: bold;
   }
 
+  /*
+  Style rule for thank you image
+  */
   a[href="https://www.freecodecamp.org/news/html-basics-for-beginners/"]{
     height: auto;
     width: auto;
@@ -107,11 +118,16 @@ h1{
     max-height: 500px;
   }
 
+  /*
+  link is active at red
+  */
   #html-link:active{
     color: red;
   }
 
-
+/*
+Flex box
+*/
   .agenda-container{
     display: flex;
     flex-direction: row;
@@ -119,46 +135,81 @@ h1{
     gap: 20%;
   }
 
+  /*
+  Grid
+  */
+
+  /*
+  Style rule for opening container
+  */
   .opening-container{
     display: grid;
     grid-template-columns: [first] 10%, [line2] 100px [line3] 300px;
     grid-template-rows: [line1] 10%;
+    margin: auto;
 
   }
 
+  /*
+  Style rule for the tittle of opening
+  */
   #opening-tittle{
     grid-area: 1/ line1 / first / line 2;
   }
 
+  /*
+  Style rule for the details in opening
+  */
   #opening-form{
     grid-area: 1/ line1/ line2 / line 3;
   }
 
+  /*
+  selector list
+  */
   i, strong{
     text-decoration: underline;
   }
-
+  
+  /*
+  element selector
+  */
   h2{
     color: purple;
   }
 
+  /*
+  descendant combinator
+  */
   .roles li{
     color: lightcoral;
   }
 
+  /*
+  general sibling combinator
+  */
   h3 ~ h4{
     color: #191970;
   }
 
+  /*
+  child combinator
+  */
   .todo > li {
     text-decoration: underline;
   } 
 
+  /*
+  adjacent sibling combinator
+  */
   h3 + p{
     color: #191970;
     font-weight: bold;
   }
 
+  /*
+  combining two selectors
+  */
   textarea.feedback {
     width: 500px;
     height: 100px;
